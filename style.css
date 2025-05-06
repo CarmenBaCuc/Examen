@@ -1,0 +1,260 @@
+.barra{
+    width: 100%;
+    background-color: #f76104;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 4px 10px rgba(59, 7, 7, 0.3);
+   
+    }
+    .barra a{
+        color:white;
+        text-decoration: none;
+        padding: 12px 17px;
+        font-size: 16px;
+        transition: background 0.3s;
+    
+    }
+    nav a:hover{
+        background: #e95c04;
+        border-radius: 5px;
+    
+ 
+            color:white;
+        }
+
+    nav a{
+        display: block;
+         }
+
+    header {
+      background: url(imagenes/esta.jpg!w700wp);
+      height: 300px;
+      width: 1350px;
+      overflow: hidden;
+      background-size: cover;
+    
+    }
+    body{
+        font-family: 'Times New Roman', Times, serif;
+        background-color:wheat;
+        
+    }
+
+   .ult{
+       font-size: 20px;
+       
+    }
+
+    .historia{
+      margin: 60px;
+    }
+    .numero{
+        width: 80px;
+        height: 80px;
+    }
+
+    a{
+        color: black;
+    }
+
+    table{
+        text-align: center; 
+    }
+    
+    .uuu{
+        color:red;
+    }
+
+    h1{
+        color:black;
+        text-align: center; 
+    }
+
+    .re{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .re img{
+        margin:  10px;
+    }
+
+    main{
+        text-align: center;
+    }
+
+    #ani {
+        animation: fadein 6s ease-in-out;
+      }
+      
+      #ane {
+        animation: fadein 8s ease-in-out;
+      }
+
+      #ann {
+        animation: fadein 10s ease-in-out;
+      }
+
+      #iii{
+        animation: entradaTop 0.5s ease 1.3s forwards;
+        opacity: 0;
+    }
+
+    #cabeza{
+        animation: entradaTop 1s ease;
+
+    }
+
+    #link1{
+        animation: entradaTop 0.5s ease 1s forwards;
+        opacity: 0;
+    }
+    #link2{
+        animation: entradaTop 0.5s ease 1.1s forwards;
+        opacity: 0;
+    }
+
+    #link3{
+        animation: entradaTop 0.5s ease 1.2s forwards;
+        opacity: 0;
+    }
+
+    #link4{
+        animation: entradaTop 0.5s ease 1.3s forwards;
+        opacity: 0;
+    }
+
+    #contCentraltxt{
+        animation: entradaLeft 1.2s ease 0.5s forwards;
+        opacity: 0;
+        
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    #contCentral{
+        animation: entradaLeft 4s ease 0.5s forwards;
+        opacity: 0;
+    }
+  
+    #segundo{
+       animation: entradaRight 1s ease 2s forwards;
+       opacity: 0;
+        
+    }
+
+    #tercera{
+        animation: entradaRight 1s ease 4s forwards;
+        opacity: 0;
+         
+     }
+     #cuarta{
+        animation: entradaRight 1s ease 6s forwards;
+        opacity: 0;
+         
+     }
+
+     #quinta{
+        animation: entradaRight 1s ease 8s forwards;
+        opacity: 0;
+         
+     }
+    #contCentralimg{
+        animation: entradaRight 1s ease 3s forwards;
+        opacity: 0;
+    
+        }
+
+    
+     #contCen{
+            animation: entradaRight 1s ease 4s forwards;
+            opacity: 0;
+             
+        }
+    
+     #foo{
+            animation: entradaRight 1s ease 6s forwards;
+            opacity: 0;
+         }
+         .contenedor {
+            position: relative; /* Para que la imagen absoluta se posicione relativa a este contenedor */
+            height: 20px; /* Asegúrate de que el contenedor tenga una altura */
+          }
+          
+          .imagen-abajo {
+            position:static; /* Posicionamiento absoluto */
+            bottom: 0; /* Posiciona la imagen en la parte inferior del contenedor */
+            left: 0; /* Si quieres que la imagen esté alineada a la izquierda del contenedor */
+            /* Puedes ajustar la posición horizontal con left o right */
+            object-position: bottom; /* Alinea la imagen al final del área de la imagen */
+          }
+
+
+    @keyframes entradaTop{
+       from{
+             transform: translateY(-500px);
+             opacity: 0;
+       }
+
+       to{
+        transform: translateY(0);
+        opacity: 1;
+  }
+    }
+
+
+    @keyframes entradaScale{
+       
+        0%{
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        70%{
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes entradaLeft{
+        from{
+            transform: translateX(-500px);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    
+    }
+
+    
+    @keyframes entradaRight{
+        from{
+            transform: translateX(-500px);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    
+    }
+
+    @keyframes fadein {
+        from {
+          opacity: 0; 
+        }
+        to {
+          opacity: 1; 
+        }
+      }
